@@ -1,0 +1,28 @@
+
+spring:
+    application:
+      name: Docker-Maven-Demo
+    profiles:
+        active: dev
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: false # we use gulp + BrowserSync for livereload
+    jackson:
+        serialization.indent_output: true
+    h2:
+        console:
+            enabled: false
+
+liquibase:
+    contexts: dev
+
+server:
+    port: 8080
+
+# ===================================================================
+# Application specific properties
+# ===================================================================
+
+application:
